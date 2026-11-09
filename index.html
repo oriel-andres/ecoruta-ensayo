@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoRuta Temuco</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <!-- ENCARGO A: Encabezado -->
+    <header class="encabezado">
+      <h1 class="logo">
+        <img src="img/logo.svg" alt="" />
+        EcoRuta Temuco
+      </h1>
+      <nav class="menu" aria-label="Principal">
+        <a href="#" class="activo">Inicio</a>
+        <a href="#">Rutas</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ENCARGO B: BannerPrincipal, con el Buscador adentro -->
+      <section class="banner">
+        <div>
+          <h2>Rutas sostenibles de La Araucanía</h2>
+          <p>Senderos y emprendimientos cerca de Temuco</p>
+        </div>
+        <form class="buscador" role="search">
+          <label for="busqueda" class="solo-lector">Buscar una ruta</label>
+          <input type="search" id="busqueda" placeholder="Buscar una ruta…" />
+          <button type="button">Buscar</button>
+        </form>
+      </section>
+
+      <!-- ENCARGO D: ListaRutas. Cada article es una TarjetaRuta (ENCARGO C) -->
+      <section class="lista">
+        <h2>Rutas destacadas</h2>
+        <div class="fila">
+          <article class="tarjeta">
+            <img src="img/nielol.svg" alt="Sendero del Cerro Ñielol" />
+            <div class="cuerpo">
+              <h3>Cerro Ñielol</h3>
+              <p class="meta">
+                4 km
+                <span class="chip baja">baja</span>
+                <span class="sello">♿ Accesible</span>
+              </p>
+              <a href="#" class="boton">Ver ruta</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/captren.svg" alt="Laguna Captrén rodeada de cerros" />
+            <div class="cuerpo">
+              <h3>Laguna Captrén</h3>
+              <p class="meta">
+                2 km
+                <span class="chip baja">baja</span>
+              </p>
+              <a href="#" class="boton">Ver ruta</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="img/sierra-nevada.svg" alt="Cumbre nevada de la Sierra Nevada" />
+            <div class="cuerpo">
+              <h3>Sierra Nevada</h3>
+              <p class="meta">
+                7 km
+                <span class="chip alta">alta</span>
+              </p>
+              <a href="#" class="boton">Ver ruta</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ENCARGO E: ListaEmprendimientos. Cada article es una TarjetaEmprendimiento -->
+      <section class="lista">
+        <h2>Emprendimientos cercanos</h2>
+        <div class="fila">
+          <article class="emprendimiento">
+            <div class="icono"></div>
+            <div>
+              <h3>Café Raíces</h3>
+              <p>Cafetería · Temuco</p>
+            </div>
+          </article>
+
+          <article class="emprendimiento">
+            <div class="icono"></div>
+            <div>
+              <h3>Huerta Lafken</h3>
+              <p>Productos orgánicos · Padre Las Casas</p>
+            </div>
+          </article>
+
+          <article class="emprendimiento">
+            <div class="icono"></div>
+            <div>
+              <h3>Bici Sur</h3>
+              <p>Arriendo de bicicletas · Temuco</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SIN ENCARGO esta semana: el clima sigue solo en esta versión HTML -->
+      <section class="clima">
+        <h2>Clima en la ruta</h2>
+        <p class="temperatura">14 °C</p>
+        <p class="detalle">Viento 12 km/h · Parcialmente nublado</p>
+        <p class="aviso">Buen momento para salir</p>
+      </section>
+    </main>
+
+    <!-- ENCARGO A: PiePagina -->
+    <footer class="pie">
+      <p>© 2026 EcoRuta Temuco · Proyecto ICINF1107 UCT</p>
+      <p><a href="#">Contacto</a> · <a href="#">Accesibilidad</a> · <a href="#">GitHub</a></p>
+    </footer>
+  </body>
+</html>
